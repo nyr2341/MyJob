@@ -9,6 +9,8 @@
 <body>
 
 	Git Commit Test
+	
+	Git Push Test
 
 </body>
 </html>
