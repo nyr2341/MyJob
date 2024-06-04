@@ -8,5 +8,7 @@
 </head>
 <body>
 
+	Git Commit Test
+
 </body>
 </html>
