@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nyr.todo.page.PageDTO;
 
 @RestController
-@RequestMapping(value="/*")
+@RequestMapping(value="/")
 public class ToDoListController {
 	private Logger logger = LoggerFactory.getLogger( this.getClass() );
 	
@@ -24,11 +24,6 @@ public class ToDoListController {
 	@Autowired
 	public ToDoListController( ToDoListService toDoListService ) {
 		this.toDoListService = toDoListService;
-	}
-	
-	@GetMapping("test")
-	public void asd() {
-		toDoListService.asdasd();
 	}
 	
 	@GetMapping("")
