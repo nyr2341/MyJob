@@ -1,4 +1,4 @@
-package com.nyr.aspect;
+package com.nyr.todo.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -13,7 +13,7 @@ public class LoggingAspect {
 	
 	private static final Logger logger = LoggerFactory.getLogger( LoggingAspect.class );
 	
-	private final String execTarget1 = "execution(* com.nyr..*Service*.*(..))";
+	private final String execTarget1 = "execution(* com.nyr.todo.*Service*.*(..))";
 	
 	@Before(execTarget1)
 	public void loggingBefore( JoinPoint joinPoint ) {
